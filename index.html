@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1>Guess The Number</h1>
+    <h3>How to play?</h3>
+    <p>
+        We will selected a random number between 1 and 100. <br>
+        You will get 10 turns to guess it right. <br>
+        And we will tell you after every guess that 
+        if your guess was high or low. <br>
+        Best For Luck! <br>
+    </p>
+
+    <button type="button" id="start" class="start-btn" onclick="start()">Start</button>
+    <button type="button" id="reset" class="reset-btn" onclick="window.location.reload()">Reload</button>
+
+    <div id="main-div" class="main-div">
+        Enter the guess -> <input type="text" id="guess-box" class="guess-box">
+        <button type="button" id="check" class="check-btn" onclick="checkGuess()">Check</button>
+
+        <div id="all-guesses">Your Guess: </div>
+        <div id="high-or-low" class=""></div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
